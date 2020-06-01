@@ -1,0 +1,124 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?cs=srgb&dl=arte-brillante-color-concentrarse-373543.jpg&fm=jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0;
+}
+
+body::before{
+    content: "";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-height: 100vh;
+    background: linear-gradient(90deg,#77F8F1, #88B9E7);
+    opacity: 0.4;
+    margin: 0;
+}
+ 
+p {
+    
+    font-size: 20px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+}
+
+header{
+    text-align: center;
+    font-size: 17px;
+    width: 96%;
+}    
+    
+form {
+    width: 96%;
+    height: 96%;
+    max-width: 700px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1px 40px;
+    box-sizing: border-box;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    font-size: 1.130rem;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: none;
+
+}
+
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin:  0px 0px -30px 0px;
+    border-radius: 6px;
+    border: none;
+    min-height: 40px;
+    max-height: 80px;
+    max-width: 100%;
+    resize: vertical;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.form-group{
+    margin: 40px 0px 40px 0px;
+}
+    
+    
+
+#usuario {
+    width: 10%;
+    margin-bottom: 3px;
+    min-height: 1rem;
+    min-width: 1rem;
+    cursor: pointer;
+}
+    
+
+.submit-button {
+    width: 100%;
+    margin: 20px 0px;
+    padding: 10px;
+    background: #247BA0;
+    color: inherit;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+    }
+}
+
+
